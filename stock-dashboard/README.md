@@ -8,7 +8,7 @@ Built with: Python, yfinance, pandas, matplotlib
 
 ## Dashboard Preview
 
-![Stock Dashboard](/Python-/stock-dashboard/stock_dashboard.png)
+![Stock Dashboard](stock_dashboard.png)
 
 ## What it does
 
