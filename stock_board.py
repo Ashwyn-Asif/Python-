@@ -67,13 +67,20 @@ def plot_dashboard(df,ticker,short,long):
     ax3.legend(fontsize = 8)
     ax3.grid(True , alpha = 0.3,axis="y")
 
-    plt.show()     
-df = fetch_data(TICKER,PERIOD)
-df = add_moving_averages(df,MA_SHORT,MA_LONG)
-df = add_daily_returns(df)
-print_summary(df,TICKER)
-plot_dashboard(df, TICKER, MA_SHORT, MA_LONG)
+    plt.savefig("stock_dashboard.png", dpi=150, bbox_inches="tight")
+    print("Chart saved → stock_dashboard.png")
+    plt.show()  
 
+def main():
+    print(f"Fetching {PERIOD} of data for {TICKER} ...")   
+    df = fetch_data(TICKER,PERIOD)
+    df = add_moving_averages(df,MA_SHORT,MA_LONG)
+    df = add_daily_returns(df)
+    print_summary(df,TICKER)
+    plot_dashboard(df, TICKER, MA_SHORT, MA_LONG)
+
+if __name__ == "__main__":
+    main()
 
 
 
