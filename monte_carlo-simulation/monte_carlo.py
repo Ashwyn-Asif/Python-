@@ -21,4 +21,13 @@ def simulate_price_paths(start_price,drift,volatility,days,simulations):
     
     return price_paths
 
+def calculate_var(price_paths,start_price,confidence,investment):
+    final_prices=price_paths[-1]
+    returns = (final_prices - start_price)/start_price
+
+    var_percent = 1-confidence
+    var_return = np.percentile(returns,var_percent *100) 
+    var_dollar = var_return * investment
+
+    return returns , var_return , var_dollar
 
