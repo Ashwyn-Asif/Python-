@@ -53,7 +53,7 @@ def plot_simulation(price_paths,returns, var_returns,ticker,confidence):
     ax2.set_ylabel("Frequency")
     ax2.legend(fontsize=8)
     ax2.grid(True,alpha=0.3,axis="y")
-    plt.savefig("monte_carlo.png", dpi=150, bbox_inches="tight")
+    plt.savefig("monte_carlo-simulation/monte_carlo.png", dpi=150, bbox_inches="tight")
     plt.show()
 
 def print_summary(ticker,start_price,days,simulations,confidence,var_return,var_dollar,investment):
