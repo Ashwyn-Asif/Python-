@@ -31,7 +31,3 @@ analytical dashboard with return distribution analysis.
 - **Libraries:** NumPy, pandas, matplotlib, yfinance
 - **Focus areas:** Data analysis · Probabilistic modelling · Visualisation
 
----
-
-*Open to opportunities in data, research, and technology roles.*  
-📍 Budapest, Hungary &nbsp;|&nbsp; 🇵🇰 Pakistani national
